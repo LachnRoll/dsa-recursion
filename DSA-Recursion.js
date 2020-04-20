@@ -91,12 +91,31 @@ triangleNum(5);
 // Output: ["04", "19", "2020"]
 
 function split(str, sep) {
-    let idx = str.idxOf(sep)
+    let idx = str.indexOf(sep)
     if ( idx == -1){
         return [str];
     }
-    // return [str.slice(0, idx)].concat(split(str.slice(idx + sep.length), sep))
-    return str.slice(0,idx).concat(split(str.slice(idx + sep.length), sep))
+    
+    return [str.slice(0, idx)].concat(split(str.slice(idx + sep.length), sep))
 }
 
-split('04/19/2020')
+split('04/19/2020', '/')
+
+// ========================================================
+// 6. Fibonacci Sequence
+// 1, 1, 2, 3, 5, 8, 13.
+
+function fibonacci(n) {
+    // Base case
+    if (n <= 0) {
+      return 0;
+    }
+    // Base case
+    if (n <= 2) {
+      return 1;
+    }	
+    // Recursive case
+    return fibonacci(n - 1) + fibonacci(n - 2);	
+  }
+  
+  fibonacci(7)
