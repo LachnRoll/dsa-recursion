@@ -1,4 +1,4 @@
-const memory = require('./memory')
+const memory = require('../memory');
 
 class Array1 {
     constructor() {
@@ -83,22 +83,3 @@ class Array {
 
 Array.SIZE_RATIO = 3; // set the size ratio for capacity
 
-// 2. Explore the push() method
-function main(){
-
-    Array.SIZE_RATIO = 3;
-
-    // Create an instance of the Array class
-    let arr = new Array();
-
-    // Add an item to the array
-    arr.push(3);
-
-    console.log(arr);
-}
-
-// What is the length, capacity and memory address of your array?
-
-
-
-// Add the following in the main function and then print the array:
