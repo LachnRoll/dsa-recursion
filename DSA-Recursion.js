@@ -1,3 +1,6 @@
+/* jshint strict: false */
+/* jshint esversion: 6 */
+
 // 1. Counting Sheep
 // What is the input to the program?
 // Input is 3
@@ -11,15 +14,15 @@
 
 const countingSheep = function(numOfSheep) {
     if (numOfSheep === 0) {
-        console.log('All sheep jumped over the fence') 
+        console.log('All sheep jumped over the fence'); 
     } else {
-        console.log('Another sheep jumped over the fence.') // output
-        return countingSheep(numOfSheep - 1) // changes each recursive call by -1
+        console.log('Another sheep jumped over the fence.'); // output
+        return countingSheep(numOfSheep - 1); // changes each recursive call by -1
     }
 }
 
 let numOfSheep = 3 // input to the program
-countingSheep(numOfSheep)
+countingSheep(numOfSheep);
 
 // ========================================================
 // 2. Power Calculator
@@ -61,7 +64,7 @@ const reverseString = function(string) {
     if (string.length < 2) {
         return string;
     }
-    return reverseString(string.slice(1)) + string[0]
+    return reverseString(string.slice(1)) + string[0];
 }
 reverseString('hello world');
 
@@ -80,7 +83,7 @@ function triangleNum(n) {
     if (n < 2) {
         return n;
     }
-    return n + triangleNum(n - 1)
+    return n + triangleNum(n - 1);
 }
 
 triangleNum(5);
@@ -91,15 +94,15 @@ triangleNum(5);
 // Output: ["04", "19", "2020"]
 
 function split(str, sep) {
-    let idx = str.indexOf(sep)
+    let idx = str.indexOf(sep);
     if ( idx == -1){
         return [str];
     }
     
-    return [str.slice(0, idx)].concat(split(str.slice(idx + sep.length), sep))
+    return [str.slice(0, idx)].concat(split(str.slice(idx + sep.length), sep));
 }
 
-split('04/19/2020', '/')
+split('04/19/2020', '/');
 
 // ========================================================
 // 6. Fibonacci Sequence
@@ -118,8 +121,7 @@ function fibonacci(n) {
     return fibonacci(n - 1) + fibonacci(n - 2);	
   }
   
-  fibonacci(7)
-
+  fibonacci(7);
 
 // 7. Factorial
 // Write a recursive function that finds the factorial of a given number. 
@@ -133,10 +135,10 @@ function factorial(n) {
         return 1;
     }
     // recursive case
-    return n * factorial(n - 1)
+    return n * factorial(n - 1);
 }
 
-factorial(5)
+factorial(5);
 
 // 8. Find a way out of the maze
 // You have entered a Maze and need to find your way out of it. 

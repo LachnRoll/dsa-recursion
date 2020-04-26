@@ -1,3 +1,6 @@
+/* jshint strict: false */
+/* jshint esversion: 6 */
+
 class Memory {
     constructor() {
         this.memory = new Float64Array(1024);
@@ -47,7 +50,7 @@ class Memory {
 class Array {
     constructor() {
         this.length = 0;
-        this.ptr = memory.allocate(this.length)
+        this.ptr = memory.allocate(this.length);
     }
 
     push(value) {
