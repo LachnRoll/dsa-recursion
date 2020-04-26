@@ -1,7 +1,7 @@
 /* jshint strict: false */
 /* jshint esversion: 6 */
 
-const memory = require('../memory');
+const memory = require('./memory');
 
 class Array1 {
     constructor() {

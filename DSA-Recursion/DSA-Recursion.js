@@ -21,7 +21,7 @@ const countingSheep = function(numOfSheep) {
     }
 }
 
-let numOfSheep = 3 // input to the program
+let numOfSheep = 3; // input to the program
 countingSheep(numOfSheep);
 
 // ========================================================
