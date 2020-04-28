@@ -48,3 +48,28 @@ function display(stack) {
         node = node.next;
     }
 }
+
+function remove(stack, item) {
+    console.log('stack:', stack);
+    let node = stack.top;
+    let order = 0;
+    while (node.data !== null) {
+        console.log(order, node.data);
+        order++;
+        node = node.next;
+        if (node.data !== item) {
+            stack.push(node.data);
+        }
+        // stack.pop();
+    }
+    console.log(stack);
+}
+
+module.exports = {
+    _Node,
+    Stack,
+    peek,
+    isEmpty,
+    display,
+    remove
+};
