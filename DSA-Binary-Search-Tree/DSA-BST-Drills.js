@@ -240,4 +240,39 @@ function isBstBalanced(tree) {
 }
 console.log(isBstBalanced(numberBinaryTree()));
 
+// 9. Are they the same BSTs?
+function areTheyTheSameBst(arr1, arr2) {
+    if (arr1.length !== arr2.length || arr1[0] !== arr2[0]) {
+        return false;
+    }
+    if (arr1.length === 0 || arr2.length === 0) return true;
+
+    const higher1 = [];
+    const lower1 = [];
+    const higher2 = [];
+    const lower2 = [];
+
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] > arr1[0]) {
+            higher1.push(arr1[i]);
+        } else {
+            lower1.push(arr1[1]);
+        }
+    }
+
+    for (let i = 0; i < arr2.length; i++) {
+        if (arr2[i] > arr2[0]) {
+            higher2.push(arr2[i]);
+        } else {
+            lower2.push(arr2[i]);
+        }
+    }
+
+    return areTheyTheSameBst(higher1, higher2) && areTheyTheSameBst(lower1, lower2);
+}
+
+const arr1 = [3, 5, 4, 6, 1, 0, 2];
+const arr2 = [3, 1, 5, 2, 4, 6, 0];
+console.log(areTheyTheSameBst(arr1, arr2));
+
 module.exports = BinarySearchTree;
