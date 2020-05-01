@@ -156,5 +156,4 @@ class BinarySearchTree {
         }
         return this.left._findMin();
     }
-
 }
