@@ -29,14 +29,15 @@ What are the first 2 lists to be merged?
 [21], [1]
 
 Which two lists would be merged on the 7th merge?
-Left: [21], [1], [26], [45], [29], [28], [2], [9]
-[21], [1]
-[26], [45]
-[1, 21], [26, 45]
-[29], [28]
-[2], [9]
-[28, 29], [2, 9]
-[ 1, 21, 26, 45 ], [ 2, 9, 28, 29 ]
+
+    Left: [21], [1], [26], [45], [29], [28], [2], [9]
+    [21], [1]
+    [26], [45]
+    [1, 21], [26, 45]
+    [29], [28]
+    [2], [9]
+    [28, 29], [2, 9]
+    [ 1, 21, 26, 45 ], [ 2, 9, 28, 29 ]
 
 2.  Understanding quicksort
     1) Suppose you are debugging a quicksort implementation that is supposed to sort an array in ascending order. After the first partition step has been completed, the contents of the array is in the following order: 3 9 1 14 17 24 22 20. Which of the following statements is correct about the partition step? Explain your answer.
