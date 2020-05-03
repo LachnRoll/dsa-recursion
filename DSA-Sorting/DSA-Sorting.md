@@ -4,17 +4,22 @@ Given the following list of numbers 21, 1, 26, 45, 29, 28, 2, 9, 16, 49, 39, 27,
 [21, 1, 26, 45, 29, 28, 2, 9, 16, 49, 39, 27, 43, 34, 46, 40]
 
 Left: [21, 1, 26, 45, 29, 28, 2, 9] 
+
 Left: [21, 1, 26, 45], [29, 28, 2, 9]
+
 Left: [21, 1], [26, 45], [29, 28], [2, 9]
+
 Left: [21], [1], [26], [45], [29], [28], [2], [9]
 
 Right: [16, 49, 39, 27, 43, 34, 46, 40]
+
 Right: [16, 49, 39, 27], [43, 34, 46, 40]
+
 Right: [16, 49], [39, 27], [43, 34], [46, 40]
+
 Right:[16], [49], [39], [27], [43], [34], [46], [40]
 
 What is the resulting list that will be sorted after 3 recursive calls to mergesort? [21, 1]
-
 
 What is the resulting list that will be sorted after 16 recursive calls to mergesort? [16, 49, 39, 27, 43, 34, 46, 40]
 It takes 15 recursive calls to get seperate all the items on the left side.
